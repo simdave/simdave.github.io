@@ -1,0 +1,636 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+	direction: rtl;
+	background-color: black;
+}
+
+ .article1, .article2, .article3 {right: -800px;}
+
+                .article4, .article5, .article6 {left: -800px;}
+
+                .article7 {bottom: -800px;}
+
+                .logo-section {top: -800px;}
+
+/********Layout******/
+.big-wrapper {
+	display: flex;
+	height: 100vh;
+}
+
+.wrapper {
+	height: 85vh;
+	max-width: 1500px;
+	width: 77%;
+	margin: auto;
+	position: relative;
+	display: flex;
+	background-image: url(background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 10%;
+	box-shadow: 5px 5px 30px rgba(255,255,255,0.5);
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.column-narrow {
+	padding: 40px 0;
+	height: 100%;
+	width: 28%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.column-wide {
+	width: 44%;
+	text-align: center;
+	margin: 0 5%;
+}
+
+.col1 {
+	order: -1;
+	margin-right: 60px;
+}
+
+
+.col3 {
+	margin-left: 60px;
+}
+
+
+.column-wide-top {
+	background-color: #2E2F2F;
+	border-radius: 0 0 15px 15px;
+	box-shadow: inset 2px 0px 0px rgba(255, 255, 255, .7), inset -2px -2px 2px rgba(0, 0, 0, .4);
+	box-shadow: 3px 3px 2px rgba(105,105,105,.9);
+	padding: 25px 37px 80px 37px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 400px;
+	transform: translate(-50%, 0);
+	display: initial;
+	padding: 2px 0;
+	text-align: center;
+	color: white;
+	background-color: rgb(95,96,98);
+	letter-spacing: 1px;
+	font-family: fontBold, arial;
+}
+
+footer p {
+	display: inline-block;
+	font-size: .8em;
+	}
+
+footer img {
+	width: 90px;
+	position: relative;
+	top: 5px;
+	display: inline-block;
+	margin-left: 10px;
+	}
+
+.floating {
+	position: absolute;
+	text-align: center;
+	width: 300px;
+	bottom: 50px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*****Typography******/
+body {
+	font-family: font, arial;
+	line-height: 1.4;
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: initial;
+}
+
+@font-face {
+font-family: font;
+src: url(EFT_Tsafon.ttf);
+}
+
+@font-face {
+    font-family: fontBlack;
+    src: url(EFT_TsafonBlack.ttf);
+}
+
+@font-face {
+    font-family: fontBold;
+    src: url(EFT_TsafonBold.ttf);
+}
+
+@font-face {
+    font-family: fontHeavy;
+    src: url(EFT_TsafonHeavy.ttf);
+}
+
+@font-face {
+    font-family: fontLight;
+    src: url(EFT_TsafonLight.ttf);
+}
+
+.font-bold {
+	font-family: fontBold;
+}
+
+h1, h2, h3, h5, h6 {
+	color: rgb(188,144,78);
+	margin: 0;
+	font-family: fontHeavy;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 1.7em;
+	font-weight: regular;
+	line-height: 1.2;
+}
+
+
+.sub-header {
+	color: white;
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+
+h3 {
+	font-size: 1.6em;
+	margin-bottom: 2px;
+	display: inline-block;
+}
+
+.col3 h3 {
+	margin-right: 20px;
+}
+
+
+.box-subtitle {
+	font-size: 1.1em;
+	padding: 7px 0;
+}
+
+p, span {
+	margin: 0;
+}
+
+
+.box p {
+		margin: 0;
+		padding: 0;
+		line-height: 1.1;
+	}
+
+	.bubble p {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 1.1em;
+}
+
+
+footer p {
+	font-size: 1em;
+	font-family: fontBold, arial;
+	color: white;
+}
+
+
+
+/******Images********/
+.logo {
+	width: 80%;
+	margin: 10px 0;
+}
+
+article img[src*="icon"] {
+	margin-left: 10px;
+	margin-right: 20px;
+
+}
+
+	.sample1 {
+		width: 100px;
+		position: absolute;
+		top: -81px;
+		left: 20px;
+	}
+
+.sample2 {
+		top: -50px;
+			width: 90px;
+		position: absolute;
+		left: 30px;
+	}
+
+	.sample3 {
+		top: -46px;
+		width: 120px;
+		position: absolute;
+		left: 20px;
+	}
+
+
+
+/****Animations*****/
+
+	h2 {
+		animation: fadein 1.9s;
+	}
+
+	@keyframes fadein {
+    0% { opacity: 0; }
+    80% { opacity: 0; }
+    100%   { opacity: 1; }
+}
+
+
+.logo {
+		animation: fadein 1.6s;
+	}
+
+.sub-header {
+		animation: fadein 2.2s;
+	}
+
+
+.column-wide-top {
+		animation: fadein 1.3s;
+	}
+
+
+footer {
+	animation: fadein 6.8s;
+}
+
+@keyframes flash {
+            0%, 100% {
+               opacity: 1;
+            }
+            50% {
+               opacity: 0;
+            }
+         }
+         
+         .flash {
+            animation-name: flash;
+         }
+
+
+/*****Article & Boxes******/
+
+
+article {
+	position: relative;
+}
+
+.box {
+		border-radius: 10px;
+		text-align: right;
+		min-height: 80px;
+		padding: 0px 14px;
+		display: flex;
+  		align-items: center;
+  		flex-wrap: wrap;
+	background: rgba(211,211,211,.3);
+	border-radius: 10px 10px 10px 10px;
+	padding: 0px 20px;
+	border: 2px solid white;
+	box-shadow: 
+  0 1px 2px #fff, /*bottom external highlight*/
+  0 -1px 1px #666, /*top external shadow*/ 
+  inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+  inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/;
+  line-height: 1;
+}
+
+
+.box:hover {
+		box-shadow: 2px 2px 12px -2px rgba(255,255,255,.7);
+		color: white;
+		cursor: pointer;
+	}
+
+/****Bubbles*****/
+
+.bubble {
+	background: white;
+	position: relative;
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.7);
+}
+
+
+.bubble::before {
+  content: "";
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid #fff transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 20px #fff solid;
+  border-left: 30px solid transparent;
+  position: absolute; 
+  top: -15px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 1px; /* Need a specific value to work */
+}
+
+
+
+
+	.bubble4, .bubble5, .bubble6 {
+		position: absolute;
+		right: -370px;
+		top: 25px;
+	}
+
+	.bubble6 {
+		top: -175px;
+	}
+
+	.bubble1, .bubble2, .bubble3 {
+		position: absolute;
+		left: -380px;
+		top: 25px;
+	}
+
+	.bubble3 {
+		top: -95px;
+	}
+
+	.bubble7 {
+		top: -375px;
+	}
+	
+	.bubble {
+		position: absolute;
+		display: initial;
+		z-index: 15;
+		width: 350px;
+		border-radius: 10px;
+		display: none;
+		text-align: center;
+	}
+
+/***Bubble Arrows****/
+
+.bubble::before {
+		display: none;
+	}
+
+	.arrow7 {
+  		width: 0; 
+  		height: 0; 
+  		border-left: 40px solid transparent;
+  		border-right: 40px solid transparent;
+  		border-top: 40px solid white;
+  		position: absolute;
+  		right: 130px;
+  		bottom: -25px;
+  	}
+
+
+  	.arrow6 {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 50px 25px 0;
+		border-color: transparent #fff transparent transparent;
+  		position: absolute;
+  		left: -30px;
+  		bottom: 25%;
+  		z-index: -2;
+  	}
+
+  	 .arrow5 {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 50px 25px 0;
+		border-color: transparent #fff transparent transparent;
+  		position: absolute;
+  		left: -30px;
+  		bottom: 75%;
+  		z-index: -2;
+  	}
+
+  	  .arrow4 {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 50px 25px 0;
+		border-color: transparent #fff transparent transparent;
+  		position: absolute;
+  		left: -30px;
+  		bottom: 75%;
+  		z-index: -2;
+  	}
+
+  .arrow1 {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 50px;
+		border-color: transparent transparent transparent #fff;
+  		position: absolute;
+  		right: -30px;
+  		bottom: 85%;
+  		z-index: -2;
+  	}
+
+  .arrow2 {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 50px;
+		border-color: transparent transparent transparent #fff;
+  		position: absolute;
+  		right: -30px;
+  		bottom: 60%;
+  		z-index: -2;
+  	}
+
+  	.arrow3 {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 50px;
+		border-color: transparent transparent transparent #fff;
+  		position: absolute;
+  		right: -30px;
+  		bottom: 40%;
+  		z-index: -2;
+  	}
+
+/**********************
+************************
+************************
+***************************/
+@media only screen and (max-width: 1200px) {
+.wrapper {
+	width: 90%;
+}
+
+@media only screen and (max-width: 959px) {
+
+body {
+	overflow: visible;
+	text-align: center;
+}
+
+.big-wrapper {
+	display: initial;
+	height: initial;
+}
+
+.wrapper {
+	display: block;
+	height: initial;
+	max-width: initial;
+	width: 93%;
+	margin: 0 auto;
+		box-shadow: initial;
+	background-image: initial;
+}
+
+.column-narrow, .column-wide {
+	width: 100%;
+	height: initial;
+	display: initial;
+}
+
+.col1, .col3 {
+	margin: 0;
+	padding: 0;
+}
+
+
+footer {
+	height: initial;
+	display: initial;
+	transform: initial;
+	position: initial;
+	width: 100%;
+	background: initial;
+}
+
+.box {
+	background-color: lightgray;
+	padding: 10px 2px;
+	justify-content: center;
+	border-radius: 10px 10px 0 0;
+}
+
+article {
+	margin: 30px 0;
+}
+
+.box p {
+		text-align: center;
+}
+
+.box-subtitle {
+		text-align: center;
+}
+
+.column-wide {
+	padding: 0;
+	margin: 0;
+}
+
+.column-wide-top {
+	padding: 10px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.4em;
+	line-height: 1.1;
+}
+
+
+.bubble, .bubble1, .bubble2, .bubble3, .bubble4, .bubble5, .bubble6, .bubble7  {
+	position: static;
+	top: initial;
+	left: initial;
+	display: block;
+	right: initial;
+	font-size: .8em;
+	width: 100%;
+	bottom: initial;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.7);
+}
+
+.arrow, .arrow1, .arrow2, .arrow3, .arrow4, .arrow5, .arrow6, .arrow7 {display: none;}
+
+.sub-header {
+	font-size: 1.0em;
+	margin-top: 10px;
+}
+
+.floating {
+	display: none;
+}
+
+/***Images***/
+.sample1, .sample2, .sample3 {
+	margin: auto;
+	width: 110px;
+	position: static;
+	display: block;
+	top: 0;
+}
+
+footer img {
+	width: 150px;
+}
+
+
+/***Animations***/
+h2 {
+		animation: initial;
+	}
+
+
+.logo {
+			animation: initial;
+	}
+
+.sub-header {
+				animation: initial;
+	}
+
+
+.column-wide-top {
+				animation: initial;
+	}
+
+
+footer {
+			animation: initial;
+}
+
+}
