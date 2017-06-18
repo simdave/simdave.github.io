@@ -519,15 +519,6 @@ input {
 	font-family: fontBold, arial; 
 }
 
-input[placeholder="שם"] {
-	color: green;
-}
-
-input-placeholder {
-	color: yellow;
-}
-
-
 input[type="submit"] {
 		cursor: pointer;
 	}
