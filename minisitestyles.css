@@ -29,7 +29,7 @@ body {
 	margin: auto;
 	position: relative;
 	display: flex;
-	background-image: url(background.png);
+	background-image: url(background2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 10%;
@@ -234,7 +234,7 @@ article img[src*="icon"] {
 		left: 20px;
 	}
 
-.sample2 {
+.sample22 {
 		top: -50px;
 		width: 90px;
 		position: absolute;
@@ -635,7 +635,7 @@ h2 {
 }
 
 /***Images***/
-.sample1, .sample2, .sample3 {
+.sample1, .sample22, .sample3 {
 	margin: auto;
 	width: 110px;
 	position: static;
@@ -692,7 +692,7 @@ input[type="text"] {
 	font-size: 1.0em;	
 }
 
-input[name="name"] {
+input[name="telephone"] {
 	margin-right: 0%;
 }
 
